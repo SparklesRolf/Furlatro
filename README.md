@@ -1,1 +1,1 @@
-# Furlatro
+# Furlatro. The Furry Balatro Mod!

@@ -12,6 +12,7 @@ Furlatro was made as a fun little side project for some friends, but has now gre
 ### Furlatro is compatable with other mods, with a few exceptions listed below!
 * [SixSuits](https://github.com/Aurelius7309/SixSuits)
 * [Bunco](https://github.com/Firch/Bunco)
+
 *(Compatability for these mods may come out in a future update)*
 
 ### Cross-Mod implementations

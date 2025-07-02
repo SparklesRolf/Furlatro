@@ -46,6 +46,8 @@ Vanilla-Like jokers can appear like the other vanilla jokers
 ### Joker Label Structure
 <img src="gitassets/Labels.png" alt="Joker Labels" width="500">
 
+The misc rarity label is purely cosmetic and offers no gameplay functionality
+
 ## Config
 
 The mod offers a few toggles to mess with

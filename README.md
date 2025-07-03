@@ -1,4 +1,5 @@
 # Furlatro. The Furry Balatro Mod!
+<img src="gitassets/Splash.png" alt="Splash">
 
 Furlatro was made as a fun little side project for some friends, but has now grew into a fully fledged mod!
 

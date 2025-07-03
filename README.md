@@ -5,8 +5,8 @@ Furlatro was made as a fun little side project for some friends, but has now gre
 
 ## Installation
 
-1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases) version of Steammodded
-2. Install the latest [Talisman](https://github.com/SpectralPack/Talisman/releases)
+1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
+2. Install the latest [Talisman](https://github.com/SpectralPack/Talisman/releases/latest)
 
 ## Cross-Mod Content!
 

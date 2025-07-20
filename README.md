@@ -63,6 +63,13 @@ Toggling the Expanded Poker Hands Toggle will remove effected cards from the col
 
 ### Note: Some Joker quotes have content not meant for younger audiences, please turn off the toggle if you are uncomfortable seeing them, thanks!
 
+## Localization
+
+The mod is English only as of right now, but may have updates to support other languages in a future update!
+
+Localization for other languages that are already implemented into Balatro are already applied to the mod, that being said, if you are a native or bi-lingual speaker
+of a certain language (I don't fully trust translation software, etc.), I would love your help on translating entires! This is completely voluntary.
+
 ## Contributions
 
 If you're a furry and would like a custom card in Balatro, or anyone that would like to help with localization entries or just wanna follow the mod's development, join the [Discord](https://discord.gg/fCnxr4dWfh)!

@@ -3,7 +3,7 @@
 
 Furlatro was made as a fun little side project for some friends, but has now grew into a fully fledged mod!
 
-## DISCLAIMER: Since this is my first LUA project, please expect some bugs and code inconsistencies.
+DISCLAIMER: Since this is my first LUA project, please expect some bugs and code inconsistencies.
 
 ## Installation
 

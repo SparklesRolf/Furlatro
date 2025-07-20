@@ -3,6 +3,8 @@
 
 Furlatro was made as a fun little side project for some friends, but has now grew into a fully fledged mod!
 
+## DISCLAIMER: Since this is my first LUA project, please expect some bugs and code inconsistencies.
+
 ## Installation
 
 1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
@@ -56,7 +58,6 @@ The mod offers a few toggles to mess with
 <img src="gitassets/Toggles.png" alt="Config Toggles" width="500">
 
 Toggles that require a restart will take effect on the next boot of Balatro
-
 Toggling the Expanded Poker Hands Toggle will remove effected cards from the collection on boot
 
 ### Note: Some Joker quotes have content not meant for younger audiences, please turn off the toggle if you are uncomfortable seeing them, thanks!
@@ -67,4 +68,4 @@ If you're a furry and would like a custom card in Balatro, or anyone that would 
 
 *Any furry joker contributions may have applicable fine-print, all of this is listed in the discord application process*
 
-And a HUGE thanks to all the lovely beans that allowed me to add them into the mod <3 Any outsource credits are labeled on their respected card!
+And a HUGE thanks to all the lovely beans that allowed me to add them into the mod <3 Any outsource credits are labeled on their respective card!

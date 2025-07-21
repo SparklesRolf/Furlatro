@@ -186,16 +186,6 @@ SMODS.Blind { -- The Meteor
     debuff = {
         suit = 'fur_Stars'
     },
-
-    in_pool = function(self)
-        if G.playing_cards then
-            for _, v in ipairs(G.playing_cards) do
-                if v.base.suit == self.debuff.suit then
-                    return true
-                end
-            end
-        end
-    end
 }
 
 SMODS.Blind { -- The Paw

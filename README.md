@@ -15,6 +15,7 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 ### Furlatro is compatable with other mods, with a few exceptions listed below!
 * [SixSuits](https://github.com/Aurelius7309/SixSuits)
 * [Bunco](https://github.com/Firch/Bunco)
+* [Fantoms Preview](https://github.com/Fantom-Balatro/Fantoms-Preview)
 
 *(Compatability for these mods may come out in a future update)*
 

@@ -16,6 +16,7 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 * [SixSuits](https://github.com/Aurelius7309/SixSuits)
 * [Bunco](https://github.com/Firch/Bunco)
 * [Fantoms Preview](https://github.com/Fantom-Balatro/Fantoms-Preview)
+* [Cartomancer](https://github.com/stupxd/Cartomancer) *v4.15 and below
 
 *(Compatability for these mods may come out in a future update)*
 

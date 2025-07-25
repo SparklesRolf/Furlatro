@@ -9,6 +9,7 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 
 1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
 2. Install the latest [Talisman](https://github.com/SpectralPack/Talisman/releases/latest)
+3. In-game, set Talisman's score limit to OmegaNum (Option 3) and restart
 
 ## Cross-Mod Content!
 

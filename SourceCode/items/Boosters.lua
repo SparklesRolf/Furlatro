@@ -568,7 +568,7 @@ SMODS.Booster { -- Pack 8 (Special)
 
     create_card = function(self, card, i)
         local edition = poll_edition('standard_edition'..G.GAME.round_resets.ante, 2, false, true)
-        local card = create_card('mythicfurries', G.pack_cards, nil, nil, nil, nil, nil, 'mythic')
+        local card = create_card("Joker", G.pack_cards, nil, 'fur_rarityfurry', true, true, nil, 'fur')
 		card:set_edition(edition, true)
         return card
     end,

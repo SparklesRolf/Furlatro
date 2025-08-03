@@ -1,0 +1,15 @@
+{
+	"id": "Furlatro",
+	"name": "Furlatro",
+	"display_name": "Furlatro",
+	"author": ["SparklesRolf"],
+	"description": "THE Furry modpack for balatro. A passion side project brought to life!", 
+	"prefix": "fur",
+	"main_file": "Furlatro.lua",
+	"priority": -1,
+	"badge_colour": "1A98AC",
+	"badge_text_colour": "FFFFFF",
+	"version": "1.0.7",
+	"dependencies": ["Talisman (>=2.0.9)", "Balatro (>=1.0.1o)", "Steamodded (>=1.0.0~BETA-0530b-STEAMODDED)"],
+	"conflicts": ["SixSuits (>=0.1.0)", "Bunco (>=2.0)", "CardSleeves (<=1.7.7)", "FantomsPreview (>=1.0.0)", "cartomancer (<=4.15)", "Cryptid (<=0.5.9)"]
+}

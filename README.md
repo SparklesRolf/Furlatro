@@ -1,6 +1,3 @@
-# Joker Raffle active until 29th August, 2025!
-For info and a chance to win a custom joker in the mod, join the [Discord Server](https://discord.gg/fCnxr4dWfh) here! Good luck!
-
 # Furlatro. The Furry Balatro Mod!
 <img src="gitassets/Splash.png" alt="Splash">
 

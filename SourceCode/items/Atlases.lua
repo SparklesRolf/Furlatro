@@ -199,18 +199,3 @@ SMODS.Atlas {
     path = 'skins/Stars_opt2.png',
     atlas_table = 'ASSET_ATLAS',
 }
-
--- Test Joker Atlases
-SMODS.Atlas {
-    key = 'testjokers',
-    path = 'jokers/testjokers.png',
-    px = 71,
-    py = 95,
-}
-
-SMODS.Atlas {
-    key = 'furrytestjokers',
-    path = 'jokers/furrytestjokers.png',
-    px = 71,
-    py = 95,
-}

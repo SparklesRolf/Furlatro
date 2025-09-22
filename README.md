@@ -1,3 +1,9 @@
+# Furlatro Multiplayer tournament announcment!
+With v1.1.0 releasing, I'm happy to announce that I'm planning on hosting a tournament for 4 custom jokers in the future! Details are yet to be compiled,
+but will announce details here and in the [Discord](https://discord.gg/fCnxr4dWfh) server when thay are ready! Date of the event is planned to be around 
+Halloween week (Week of the 31st of October) but could be earlier or later! Please tell your floofy friends to hop on in and compete with other floofs as
+I would like to have at least 8 players participate in the tournament <3
+
 # Furlatro. The Furry Balatro Mod!
 <img src="gitassets/Splash.png" alt="Splash">
 
@@ -8,15 +14,12 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 ## Installation
 
 1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
-2. Install the latest [Talisman](https://github.com/SpectralPack/Talisman/releases/latest)
-3. In-game, set Talisman's score limit to OmegaNum (Option 3) and restart
+2. [Talisman](https://github.com/SpectralPack/Talisman/releases/latest) is no longer required for the mod to function, but is still recommended!
 
 ## Cross-Mod Content!
 
 ### Furlatro is compatable with other mods, with a few exceptions listed below!
-* [SixSuits](https://github.com/Aurelius7309/SixSuits)
-* [Bunco](https://github.com/Firch/Bunco)
-* [Fantoms Preview](https://github.com/Fantom-Balatro/Fantoms-Preview)
+* [Fantoms Preview](https://github.com/Fantom-Balatro/Fantoms-Preview) *with Talisman installed
 * [Cartomancer](https://github.com/stupxd/Cartomancer) *v4.15 and below
 
 *(Compatability for these mods may come out in a future update)*
@@ -32,6 +35,10 @@ There are currently a few additions that have gameplay/QoL changes related to ot
 
 More Cross-Mod implementations may come out in future updates!
 
+### Current Cross-Mod Content
+* [Cryptid](https://github.com/SpectralPack/Cryptid) *1 Joker*
+* [Talisman](https://github.com/SpectralPack/Talisman) *4 Jokers*
+
 ### Note: Cross-Mod mods above are not required for Furlatro to function properly
 
 ## Current Mod Additions
@@ -41,7 +48,7 @@ A 5th suit (stars) and 4 playable hands (Spectrum, *identical to SixSuits*)
 <img src="gitassets/Additions.png" alt="Additons" width="500">
 <img src="gitassets/Additions2.png" alt="Additions (Other)" width="500">
 
-*With 19 unique achievements!*
+*With 20 unique achievements!*
 
 ## Jokers
 
@@ -52,7 +59,7 @@ Vanilla-Like jokers can appear like the other vanilla jokers
 ### Joker Label Structure
 <img src="gitassets/Labels.png" alt="Joker Labels" width="500">
 
-The misc rarity label is purely cosmetic and offers no gameplay functionality
+The misc rarity label is purely cosmetic and offers no gameplay functionality (Except with the mods booster packs for semi amounts of balancing)
 
 ## Config
 

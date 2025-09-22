@@ -258,10 +258,8 @@ if not Talisman then
             local playingcardcount = 0
 
             if G.playing_cards then
-                if not context.blueprint then
-                    for _, playing_card in ipairs(G.playing_cards) do
-                        playingcardcount = playingcardcount + 1
-                    end
+                for _, playing_card in ipairs(G.playing_cards) do
+                    playingcardcount = playingcardcount + 1
                 end
             end
 
@@ -478,4 +476,5 @@ SMODS.Joker {
     set_badges = function(self, card, badges)
         badges[#badges+1] = create_badge(localize("legendary", 'labels'), G.C.RARITY[4], G.C.WHITE, 1)
     end
+
 }

@@ -1,8 +1,7 @@
-# Furlatro Multiplayer tournament announcment!
-With v1.1.0 releasing, I'm happy to announce that I'm planning on hosting a tournament for 4 custom jokers in the future! Details are yet to be compiled,
-but will announce details here and in the [Discord](https://discord.gg/fCnxr4dWfh) server when thay are ready! Date of the event is planned to be around 
-Halloween week (Week of the 31st of October) but could be earlier or later! Please tell your floofy friends to hop on in and compete with other floofs as
-I would like to have at least 8 players participate in the tournament <3
+# Joker Raffle Live until 7th November!
+Since turnout for the tournament was lacking, I switched things up to a raffle like the last one on 29th of Aug with less character restrictions
+Join the [Discord](https://discord.gg/fCnxr4dWfh) and submit your entry to enter!
+(primariliy VGC C&D orders, but eeh, ill be fineeeee~ right? lol)
 
 # Furlatro. The Furry Balatro Mod!
 <img src="gitassets/Splash.png" alt="Splash">

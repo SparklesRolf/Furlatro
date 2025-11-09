@@ -1,10 +1,3 @@
-# Joker Raffle Live until 7th November!
-Since turnout for the tournament was lacking, I switched things up to a raffle like the last one on 29th of Aug with less character restrictions
-
-Join the [Discord](https://discord.gg/fCnxr4dWfh) and submit your entry to enter!
-
-(primariliy VGC C&D orders, but eeh, ill be fineeeee~ right? lol)
-
 # Furlatro. The Furry Balatro Mod!
 <img src="gitassets/Splash.png" alt="Splash">
 

@@ -31,8 +31,9 @@ More Cross-Mod implementations may come out in future updates!
 
 ### Current Cross-Mod Content
 * [Cryptid](https://github.com/SpectralPack/Cryptid) *1 Joker*
-* [Talisman](https://github.com/SpectralPack/Talisman) *4 Jokers*
+* [Talisman](https://github.com/SpectralPack/Talisman) *9 Jokers*
 * [Balatro Multiplayer](https://github.com/Balatro-Multiplayer/BalatroMultiplayer) *1 Joker*
+* [PartnerAPI](https://github.com/Icecanno/Partner-API) *28 Partners*
 
 ### Note: Cross-Mod mods above are not required for Furlatro to function properly
 

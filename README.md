@@ -7,7 +7,7 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 
 ## Installation
 
-1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0530b) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
+1. Install the [minimum](https://github.com/Steamodded/smods/releases/tag/1.0.0-beta-0711a) or [latest](https://github.com/Steamodded/smods/releases/latest) version of Steammodded
 2. [Talisman](https://github.com/SpectralPack/Talisman/releases/latest) is no longer required for the mod to function, but is still recommended!
 
 ## Cross-Mod Content!

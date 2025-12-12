@@ -1,0 +1,575 @@
+--[[
+
+Welcome to the source code for Furlatro! Everything is organized in their respective LUA file
+in the items subfolder. All code here is just config and data tables that the mod needs.
+
+All code referenced from the mod description is labeled from their originating mod with function
+purpouses
+
+--]]
+
+local furry_mod = SMODS.current_mod
+local config = furry_mod.config
+
+G.FUNCS.fur_togglecycle = function(args) -- From Spectrum Framework (For dynamic toggles)
+    local refval = args.cycle_config.ref_value
+    config[refval].current_option=args.cycle_config.current_option
+    config[refval].option_value = args.to_val
+end
+
+furry_mod.config_tab = function() -- Config Tab
+    return {n = G.UIT.ROOT, config = {align = "m", r = 0.1, padding = 0.1, colour = G.C.BLACK, minw = 8, minh = 6}, nodes = {
+        {n = G.UIT.R, config = {align = "cl", padding = 0, minh = 0.1}, nodes = {}},
+
+        {n = G.UIT.R, config = {align = "cl", padding = 0}, nodes = {
+            {n = G.UIT.C, config = {align = "cl", padding = 0.1}, nodes = {
+                create_toggle{col = true, label = "", scale = 1, w = 0, shadow = true, ref_table = config, ref_value = "star_suit"},               
+            }},
+            {n = G.UIT.C, config = {align = "cl", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_startoggle"), shadow = true,  scale = 0.45, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+			{n = G.UIT.C, config = {align = "cr", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_restartrecommended"), shadow = true, scale = 0.23, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+        }},
+
+        {n = G.UIT.R, config = {align = "cl", padding = 0}, nodes = {
+            {n = G.UIT.C, config = {align = "cl", padding = 0.1}, nodes = {
+                create_toggle{col = true, label = "", scale = 1, w = 0, shadow = true, ref_table = config, ref_value = "poker_hands"},               
+            }},
+            {n = G.UIT.C, config = {align = "cl", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_pokerhands"), shadow = true,  scale = 0.45, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+            {n = G.UIT.C, config = {align = "cr", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_restartrequired"), shadow = true, scale = 0.23, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+        }},
+
+        {n = G.UIT.R, config = {align = "cl", padding = 0}, nodes = {
+            {n = G.UIT.C, config = {align = "cl", padding = 0.1}, nodes = {
+                create_toggle{col = true, label = "", scale = 1, w = 0, shadow = true, ref_table = config, ref_value = "joker_lines"},               
+            }},
+            {n = G.UIT.C, config = {align = "cl", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_jokerquotes"), shadow = true,  scale = 0.45, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+        }},
+
+		{n = G.UIT.R, config = {align = "cl", padding = 0}, nodes = {
+            {n = G.UIT.C, config = {align = "cl", padding = 0.1}, nodes = {
+                create_toggle{col = true, label = "", scale = 1, w = 0, shadow = true, ref_table = config, ref_value = "jokerdisplay_scaling"},               
+            }},
+            {n = G.UIT.C, config = {align = "cl", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_jokerdisplayscaling"), shadow = true,  scale = 0.45, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+			{n = G.UIT.C, config = {align = "cr", padding = 0.05}, nodes = {
+                {n = G.UIT.T, config = {text = localize("fur_restartrequired"), shadow = true,  scale = 0.23, colour = G.C.UI.TEXT_LIGHT }},               
+            }},
+        }},
+
+		create_option_cycle {
+        	label = localize("fur_complexjokers"),
+        	options = { localize("fur_enabled"), localize("fur_disabled") },
+        	current_option = config.complex_jokers.current_option,
+        	ref_table = config,
+        	ref_value = "complex_jokers",
+        	opt_callback = 'fur_togglecycle',
+        	w = 5.5
+        },
+    }}
+end
+
+-- Mod main assets
+SMODS.load_file("items/Atlases.lua")()
+SMODS.load_file("items/VanillaJokers.lua")()
+SMODS.load_file("items/FurryJokers/Uncommon.lua")()
+SMODS.load_file("items/FurryJokers/Rare.lua")()
+SMODS.load_file("items/FurryJokers/Legendary.lua")()
+SMODS.load_file("items/FurryJokers/Mythic.lua")()
+SMODS.load_file("items/FurryJokers/Corrupt.lua")()
+SMODS.load_file("items/Achievements.lua")()
+SMODS.load_file("items/Boosters.lua")()
+SMODS.load_file("items/Challenges.lua")()
+SMODS.load_file("items/Consumables.lua")()
+SMODS.load_file("items/Decks.lua")()
+SMODS.load_file("items/Enhancements.lua")()
+SMODS.load_file("items/Gameplay.lua")()
+SMODS.load_file("items/Seals.lua")()
+SMODS.load_file("items/Skins.lua")()
+SMODS.load_file("items/Sounds.lua")()
+SMODS.load_file("items/Tags.lua")()
+
+-- Cross mod content
+if CardSleeves then
+    SMODS.load_file("cross-mod/CardSleeves.lua")()
+end
+
+if JokerDisplay then
+    SMODS.load_file("cross-mod/JokerDisplay.lua")()
+end
+
+if next(SMODS.find_mod("partner")) then
+	SMODS.load_file("cross-mod/Partners.lua")()
+end
+
+
+
+
+
+
+
+
+
+----------------------------------------------MISC-------------------------------------------------------------
+SMODS.Atlas { -- Mod Icon
+	key = "modicon",
+	path = "Icon.png",
+	px = 34,
+	py = 34
+}
+
+local logo = "balatro.png" -- Title Replace
+SMODS.Atlas { 
+    key = 'balatro',
+    path = logo,
+    px = 333,
+    py = 216,
+    prefix_config = { key = false }
+}
+
+local set_spritesref = Card.set_sprites -- Following lines from Cryptid (For joker title card)
+function Card:set_sprites(_center, _front)
+	set_spritesref(self, _center, _front)
+	if _center and _center.soul_pos and _center.soul_pos.extra then
+		self.children.floating_sprite2 = Sprite(
+			self.T.x,
+			self.T.y,
+			self.T.w,
+			self.T.h,
+			G.ASSET_ATLAS[_center.atlas or _center.set],
+			_center.soul_pos.extra
+		)
+		self.children.floating_sprite2.role.draw_major = self
+		self.children.floating_sprite2.states.hover.can = false
+		self.children.floating_sprite2.states.click.can = false
+	end
+end
+local mainmenuref = Game.main_menu
+if Talisman then
+	if Cryptid then
+		Game.main_menu = function(change_context)
+			local ret = mainmenuref(change_context)
+    		local possible = {	
+    		    'j_fur_sparkles', 'j_fur_illy', 'j_fur_ghost', 'j_fur_soks',
+    		    'j_fur_kalik', 'j_fur_silver', 'j_fur_astral', 'j_fur_cobalt',
+    		    'j_fur_icesea', 'j_fur_koneko', 'j_fur_saph', 'j_fur_skips',
+    		    'j_fur_spark', 'j_fur_cryptidluposity', 'j_fur_curiousangel', 'j_fur_talismansephirapaws',
+				'j_fur_talismanxavierorjose', 'j_fur_foxxlyduskfur', 'j_fur_talismankris57', 'j_fur_talismansourstone3',
+				'j_fur_talismandanny', 'j_fur_diablo2324', 'j_fur_nemzata', 'j_fur_iridia',
+				'j_fur_maltnoodlez', 'j_fur_schnackiofficial', 'j_fur_parrotdash', 'j_fur_lume'
+    		}
+    		local menujoker = possible[math.random(#possible)]
+    		local newcard = Card(G.title_top.T.x + G.title_top.T.w, G.title_top.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[menujoker],{bypass_discovery_center = true, bypass_discovery_ui = true})
+    		-- Recenter the title
+    		G.title_top.T.w = G.title_top.T.w * 1.7675
+			G.title_top.T.x = G.title_top.T.x - 0.8
+    		G.title_top:emplace(newcard)
+    		newcard:start_materialize()
+			newcard.T.w = newcard.T.w * 1.1 * 1.2
+			newcard.T.h = newcard.T.h * 1.1 * 1.2
+			newcard.no_ui = true
+    		newcard:set_sprites(newcard.config.center, newcard.base.id and newcard.config.card)
+
+    		-- make the title screen use different background colors
+			G.SPLASH_BACK:define_draw_steps({
+					{
+						shader = "splash",
+						send = {
+							{ name = "time", ref_table = G.TIMERS, ref_value = "REAL_SHADER" },
+							{ name = "vort_speed", val = 0.4 },
+							{ name = "colour_1", ref_table = G.C, ref_value = "FUR_TITLE_F" },
+							{ name = "colour_2", ref_table = G.C, ref_value = "FUR_TITLE_B" },
+						},
+					},
+			})
+			return ret
+		end
+	else
+		Game.main_menu = function(change_context)
+			local ret = mainmenuref(change_context)
+    		local possible = {	
+    		    'j_fur_sparkles', 'j_fur_illy', 'j_fur_ghost', 'j_fur_soks',
+    		    'j_fur_kalik', 'j_fur_silver', 'j_fur_astral', 'j_fur_cobalt',
+    		    'j_fur_icesea', 'j_fur_koneko', 'j_fur_saph', 'j_fur_skips',
+    		    'j_fur_spark', 'j_fur_luposity', 'j_fur_curiousangel', 'j_fur_talismansephirapaws',
+				'j_fur_talismanxavierorjose', 'j_fur_foxxlyduskfur', 'j_fur_talismankris57', 'j_fur_talismansourstone3',
+				'j_fur_talismandanny', 'j_fur_diablo2324', 'j_fur_nemzata', 'j_fur_iridia',
+				'j_fur_maltnoodlez', 'j_fur_schnackiofficial', 'j_fur_parrotdash', 'j_fur_lume'
+    		}
+    		local menujoker = possible[math.random(#possible)]
+    		local newcard = Card(G.title_top.T.x + G.title_top.T.w, G.title_top.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[menujoker],{bypass_discovery_center = true, bypass_discovery_ui = true})
+    		-- Recenter the title
+    		G.title_top.T.w = G.title_top.T.w * 1.7675
+			G.title_top.T.x = G.title_top.T.x - 0.8
+    		G.title_top:emplace(newcard)
+    		newcard:start_materialize()
+			newcard.T.w = newcard.T.w * 1.1 * 1.2
+			newcard.T.h = newcard.T.h * 1.1 * 1.2
+			newcard.no_ui = true
+    		newcard:set_sprites(newcard.config.center, newcard.base.id and newcard.config.card)
+
+    		-- make the title screen use different background colors
+			G.SPLASH_BACK:define_draw_steps({
+					{
+						shader = "splash",
+						send = {
+							{ name = "time", ref_table = G.TIMERS, ref_value = "REAL_SHADER" },
+							{ name = "vort_speed", val = 0.4 },
+							{ name = "colour_1", ref_table = G.C, ref_value = "FUR_TITLE_F" },
+							{ name = "colour_2", ref_table = G.C, ref_value = "FUR_TITLE_B" },
+						},
+					},
+			})
+			return ret
+		end
+	end
+else
+	Game.main_menu = function(change_context)
+		local ret = mainmenuref(change_context)
+    	local possible = {	
+    	    'j_fur_sparkles', 'j_fur_illy', 'j_fur_ghost', 'j_fur_soks',
+    	    'j_fur_kalik', 'j_fur_silver', 'j_fur_astral', 'j_fur_cobalt',
+    	    'j_fur_icesea', 'j_fur_koneko', 'j_fur_saph', 'j_fur_skips',
+    	    'j_fur_spark', 'j_fur_luposity', 'j_fur_curiousangel', 'j_fur_sephirapaws',
+			'j_fur_xavierorjose', 'j_fur_foxxlyduskfur', 'j_fur_kris57', 'j_fur_sourstone3',
+			'j_fur_danny', 'j_fur_diablo2324', 'j_fur_nemzata', 'j_fur_iridia',
+			'j_fur_maltnoodlez', 'j_fur_schnackiofficial', 'j_fur_parrotdash', 'j_fur_lume'
+    	}
+    	local menujoker = possible[math.random(#possible)]
+    	local newcard = Card(G.title_top.T.x + G.title_top.T.w, G.title_top.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[menujoker],{bypass_discovery_center = true, bypass_discovery_ui = true})
+    	-- Recenter the title
+    	G.title_top.T.w = G.title_top.T.w * 1.7675
+		G.title_top.T.x = G.title_top.T.x - 0.8
+    	G.title_top:emplace(newcard)
+    	newcard:start_materialize()
+		newcard.T.w = newcard.T.w * 1.1 * 1.2
+		newcard.T.h = newcard.T.h * 1.1 * 1.2
+		newcard.no_ui = true
+    	newcard:set_sprites(newcard.config.center, newcard.base.id and newcard.config.card)
+
+    	-- make the title screen use different background colors
+		G.SPLASH_BACK:define_draw_steps({
+				{
+					shader = "splash",
+					send = {
+						{ name = "time", ref_table = G.TIMERS, ref_value = "REAL_SHADER" },
+						{ name = "vort_speed", val = 0.4 },
+						{ name = "colour_1", ref_table = G.C, ref_value = "FUR_TITLE_F" },
+						{ name = "colour_2", ref_table = G.C, ref_value = "FUR_TITLE_B" },
+					},
+				},
+		})
+		return ret
+	end
+end
+
+furry_mod.description_loc_vars = function() -- Mod description background, or we deploy a flashbang!
+    return { background_colour = G.C.CLEAR, text_colour = G.C.WHITE, scale = 1.2 }
+end
+
+local upd = Game.update -- Following lines from Cryptid (For rarity badge gradients & other gradient stuffs)
+G.C.FUR_MYTHIC = { 0, 0, 0, 0 }
+G.C.FUR_CORRUPT = { 0, 0, 0, 0 }
+G.C.FUR_NEMZATA = { 0, 0, 0, 0 }
+G.C.FUR_VGEN = { 0, 0, 0, 0 }
+G.C.FUR_DISCORD = { 0, 0, 0, 0 }
+G.C.FUR_RAFFLE = { 0, 0, 0, 0 }
+G.C.FUR_HALLOWEEN = { 0, 0, 0, 0 }
+G.C.FUR_TITLE_F = { 0, 0, 0, 0 }
+G.C.FUR_TITLE_B = { 0, 0, 0, 0 }
+furry_mod.C = {
+	MYTHIC = { HEX("0093FF"), HEX("3DFFF4") },
+	CORRUPT = { HEX("141035"), HEX("141035") },
+	NEMZATA = { HEX("D41B1D"), HEX("6EB492") },
+	RAFFLE = { HEX("3DFFF4"), HEX("8F00FF") },
+	HALLOWEEN = { HEX("FFA500"), HEX("000000") },
+	VGEN = { HEX("B6FE24"), HEX("B6FE24") },
+	DISCORD = { HEX("5865F2"), HEX("5865F2") },
+    TITLE_F = { HEX("14588E"), HEX("14588E") },
+    TITLE_B = { HEX("9F50E7"), HEX("9F50E7") },
+}
+function Game:update(dt)
+	upd(self, dt)
+
+	--Gradients based on Balatrostuck code
+	local anim_timer = self.TIMERS.REAL * 1.5
+	local p = 0.5 * (math.sin(anim_timer) + 1)
+	for k, c in pairs(furry_mod.C) do
+		if not G.C["FUR_" .. k] then
+			G.C["FUR_" .. k] = { 0, 0, 0, 0 }
+		end
+		for i = 1, 4 do
+			G.C["FUR_" .. k][i] = c[1][i] * p + c[2][i] * (1 - p)
+		end
+	end
+	G.C.RARITY["fur_mythic"] = G.C.FUR_MYTHIC
+end
+
+local function calculate_scalefactor(text) -- Following lines from Cryptid (For misc card badges)
+	local size = 0.9
+	local font = G.LANG.font
+	local max_text_width = 2 - 2 * 0.05 - 4 * 0.03 * size - 2 * 0.03
+	local calced_text_width = 0
+	for _, c in utf8.chars(text) do
+		local tx = font.FONT:getWidth(c) * (0.33 * size) * G.TILESCALE * font.FONTSCALE + 2.7 * 1 * G.TILESCALE * font.FONTSCALE
+		calced_text_width = calced_text_width + tx / (G.TILESIZE * G.TILESCALE)
+	end
+	local scale_fac = calced_text_width > max_text_width and max_text_width / calced_text_width or 1
+	return scale_fac
+end
+local fur_badge = {
+	raffle_winners29_8_2025 = {
+		col = G.C.FUR_RAFFLE,
+		text = {
+			'Raffle Winner!',
+			'29th Aug, 2025',
+		}
+	},
+	raffle_winners31_10_2025 = {
+		col = G.C.FUR_HALLOWEEN,
+		text = {
+			'Raffle Winner!',
+			'31st Oct, 2025',
+		}
+	},
+    saracrossing = {
+		col = G.C.FUR_VGEN,
+		tcol = G.C.UI.TEXT_DARK,
+        text = {
+            'Soul Artist',
+            'SaraCrossing02',
+            'vgen.co/SaraCrossing02',
+        }
+    },
+	kris_57 = {
+		col = G.C.FUR_DISCORD,
+        text = {
+            'Soul Artist',
+            'Kris Dreemurr (Kris_57)',
+            'Discord Community Member',
+        }
+    },
+}
+local smcmb = SMODS.create_mod_badges 
+function SMODS.create_mod_badges(obj, badges)
+	smcmb(obj, badges)
+	if obj and obj.misc_badge then
+		local scale_fac = {}
+		local scale_fac_len = 1
+		if obj.misc_badge and obj.misc_badge.text then
+			for i = 1, #obj.misc_badge.text do
+				local calced_scale = calculate_scalefactor(obj.misc_badge.text[i])
+				scale_fac[i] = calced_scale
+				scale_fac_len = math.min(scale_fac_len, calced_scale)
+			end
+		end
+		local ct = {}
+		for i = 1, #obj.misc_badge.text do
+			ct[i] = {
+				string = obj.misc_badge.text[i]
+			}
+		end
+		badges[#badges + 1] = {
+			n = G.UIT.R,
+			config = { align = "cm" },
+			nodes = {
+				{
+					n = G.UIT.R,
+					config = {
+						align = "cm",
+						colour = G.C.GREEN,
+						r = 0.1,
+						minw = 2/scale_fac_len,
+						minh = 0.36,
+						emboss = 0.05,
+						padding = 0.03 * 0.9,
+					},
+					nodes = {
+						{ n = G.UIT.B, config = { h = 0.1, w = 0.03 } },
+						{
+							n = G.UIT.O,
+							config = {
+								object = DynaText({
+									string = ct or "ERROR",
+									colours = { G.C.WHITE },
+									silent = true,
+									float = true,
+									shadow = true,
+									offset_y = -0.03,
+									spacing = 1,
+									scale = 0.33 * 0.9,
+								}),
+							},
+						},
+						{ n = G.UIT.B, config = { h = 0.1, w = 0.03 } },
+					},
+				},
+			},
+		}
+	end
+	if obj then
+		for k, v in pairs(fur_badge) do
+			if obj[k] then
+				local scale_fac = {}
+				local scale_fac_len = 1
+				if v.text then
+					for i = 1, #v.text do
+						local calced_scale = calculate_scalefactor(v.text[i])
+						scale_fac[i] = calced_scale
+						scale_fac_len = math.min(scale_fac_len, calced_scale)
+					end
+				end
+				local ct = {}
+				for i = 1, #v.text do
+					ct[i] = {
+						string = v.text[i]
+					}
+				end
+				badges[#badges + 1] = {
+					n = G.UIT.R,
+					config = { align = "cm" },
+					nodes = {
+						{
+							n = G.UIT.R,
+							config = {
+								align = "cm",
+								colour = v and v.col or G.C.GREEN,
+								r = 0.1,
+								minw = 2/scale_fac_len,
+								minh = 0.36,
+								emboss = 0.05,
+								padding = 0.03 * 0.9,
+							},
+							nodes = {
+								{ n = G.UIT.B, config = { h = 0.1, w = 0.03 } },
+								{
+									n = G.UIT.O,
+									config = {
+										object = DynaText({
+											string = ct or "ERROR",
+											colours = { v and v.tcol or G.C.WHITE },
+											silent = true,
+											float = true,
+											shadow = true,
+											offset_y = -0.03,
+											spacing = 1,
+											scale = 0.33 * 0.9,
+										}),
+									},
+								},
+								{ n = G.UIT.B, config = { h = 0.1, w = 0.03 } },
+							},
+						},
+					},
+				}
+			end
+		end
+	end
+end
+
+furry_mod.custom_ui = function(nodes) -- Following lines from PartnerAPI (For mod description links)
+    local _, description = unpack(nodes)
+    local discord_deepfind = SMODS.deepfind(description, "https://discord.gg/fCnxr4dWfh", true, immediate)[1]
+	local yrense_deepfind = SMODS.deepfind(description, "Yrense", true, immediate)[1]
+    if discord_deepfind then
+        local discord_link = discord_deepfind.objtree[#discord_deepfind.objtree-3]
+        discord_link.config.button = "discord_invite"
+    end
+	if yrense_deepfind then
+        local yrense_link = yrense_deepfind.objtree[#yrense_deepfind.objtree-3]
+        yrense_link.config.button = "yrense_vgen"
+    end
+end
+G.FUNCS.discord_invite = function(e)
+    love.system.openURL("https://discord.gg/fCnxr4dWfh")
+end
+G.FUNCS.yrense_vgen = function(e)
+    love.system.openURL("https://vgen.co/Yrense")
+end
+
+function set_sticker_modifiers()
+	local eternal_perishable_poll = pseudorandom((G.pack_cards and 'packetper' or 'etperpoll')..G.GAME.round_resets.ante)
+	if G.GAME.modifiers.enable_eternals_in_shop and eternal_perishable_poll > 0.7 then
+        self:set_eternal(true)
+    elseif G.GAME.modifiers.enable_perishables_in_shop and ((eternal_perishable_poll > 0.4) and (eternal_perishable_poll <= 0.7)) then
+        self:set_perishable(true)
+    end
+    if G.GAME.modifiers.enable_rentals_in_shop and pseudorandom((G.pack_cards and 'packssjr' or 'ssjr')..G.GAME.round_resets.ante) > 0.7 then
+        self:set_rental(true)
+    end
+end
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+---------------------------------------------TABLES------------------------------------------------------------
+SMODS.Rarity {
+    key = 'rarityfurry',
+    badge_colour = G.C.DARK_EDITION
+}
+
+-- All below tables are empty to dynamically inject into them for cross-mod jokers (Constant checking was too fucking annoying)
+SMODS.ObjectType { -- Joker Table
+    key = 'furry',
+    cards = {
+
+    }
+}
+
+SMODS.ObjectType { -- Non Mythics (For Base Floofy Deck)
+	key = 'nonmythics',
+	cards = { 
+
+	}
+}
+
+SMODS.ObjectType { -- Uncommon Jokers
+    key = 'uncommonfurries',
+    cards = {
+        
+    }
+}
+
+SMODS.ObjectType { -- Rare Jokers
+    key = 'rarefurries',
+    cards = {
+
+    }
+}
+
+SMODS.ObjectType { -- Legendary Jokers
+    key = 'legendaryfurries',
+    cards = {
+
+    }
+}
+
+SMODS.ObjectType { -- Mythic Jokers
+    key = 'mythicfurries',
+    cards = {
+
+    }
+}
+
+SMODS.ObjectType { -- Corrupt Jokers
+	key = 'corruptfurries',
+    cards = {
+
+    }
+}
+---------------------------------------------------------------------------------------------------------------

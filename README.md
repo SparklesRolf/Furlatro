@@ -65,7 +65,7 @@ The mod offers a few toggles to mess with
 
 Toggles that require a restart will take effect on the next boot of Balatro
 
-Toggling the Expanded Poker Hands Toggle will remove effected cards from the collection on boot
+Toggling the Spectrum Poker Hands Toggle will remove effected cards from the Joker pool, and remove Spectrum hands on reboot
 
 ### Note: Some Joker quotes have content not meant for younger audiences, please turn off the toggle if you are uncomfortable seeing them, thanks!
 

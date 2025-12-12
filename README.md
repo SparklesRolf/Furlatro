@@ -44,7 +44,7 @@ A 5th suit (stars) and 4 playable hands (Spectrum, *identical to SixSuits*)
 <img src="gitassets/Additions.png" alt="Additons" width="500">
 <img src="gitassets/Additions2.png" alt="Additions (Other)" width="500">
 
-*With 20 unique achievements!*
+*With 24 unique achievements!*
 
 ## Jokers
 

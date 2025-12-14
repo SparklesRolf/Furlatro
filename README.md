@@ -55,7 +55,7 @@ Vanilla-Like jokers can appear like the other vanilla jokers
 ### Joker Label Structure
 <img src="gitassets/Labels.png" alt="Joker Labels" width="500">
 
-The misc rarity label is purely cosmetic and offers no gameplay functionality (Except with the mods booster packs for semi amounts of balancing)
+The misc rarity label is purely cosmetic and offers no gameplay functionality (Except with the mods booster packs and tags for semi amounts of balancing)
 
 ## Config
 
@@ -71,10 +71,14 @@ Toggling the Spectrum Poker Hands Toggle will remove effected cards from the Jok
 
 ## Localization
 
-The mod is English only as of right now, but may have updates to support other languages in a future update!
+The mod mainly English only as of right now, but may have updates to support other languages in a future update!
 
 Localization for other languages that are already implemented into Balatro are already applied to the mod, that being said, if you are a native or bi-lingual speaker
 of a certain language (I don't fully trust translation software, etc.), I would love your help on translating entires! This is completely voluntary.
+
+Current Localization Contributors:
+
+French: Luria12
 
 ## Contributions
 

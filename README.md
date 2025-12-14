@@ -14,7 +14,6 @@ DISCLAIMER: Since this is my first LUA project, please expect some bugs and code
 
 ### Furlatro is compatable with other mods, with a few exceptions listed below!
 * [Fantoms Preview](https://github.com/Fantom-Balatro/Fantoms-Preview) *with Talisman installed
-* [Cartomancer](https://github.com/stupxd/Cartomancer) *v4.15 and below
 
 *(Compatability for these mods may come out in a future update)*
 

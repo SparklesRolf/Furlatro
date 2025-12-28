@@ -272,7 +272,7 @@ SMODS.Atlas { -- Tags
 }
 SMODS.Atlas { -- Vanilla Jokers
     key = 'vanillajoker',
-    path = 'Jokers/BasicJokers.png',
+    path = 'jokers/BasicJokers.png',
     px = 71,
     py = 95
 }

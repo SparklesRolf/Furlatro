@@ -478,11 +478,9 @@ SMODS.Joker {
         if next(SMODS.find_card("j_ice_cream")) and not card.ability.bufftrigger then
             card.ability.bufftrigger = true
             card.ability.extra.xmult = card.ability.extra.xmult * 1.5
-            break
         elseif not next(SMODS.find_card("j_ice_cream")) and card.ability.bufftrigger then
             card.ability.bufftrigger = false
             card.ability.extra.xmult = card.ability.extra.xmult / 1.5
-            break
         end
 
         if context.individual and context.cardarea == G.play then
@@ -861,4 +859,5 @@ SMODS.Joker {
     set_badges = function(self, card, badges)
         badges[#badges+1] = create_badge(localize("legendary", 'labels'), G.C.RARITY[4], G.C.WHITE, 1)
     end
+
 }

@@ -387,7 +387,7 @@ SMODS.Consumable { -- Notary Stamp (Red)
             local conv_card = G.hand.highlighted[i]
             G.E_MANAGER:add_event(Event({func = function()
                 play_sound('tarot1')
-                G.hand.highlighted[i]:juice_up(0.3, 0.5)
+                conv_card:juice_up(0.3, 0.5)
                 return true end }))
         
             G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.1,func = function()
@@ -437,7 +437,7 @@ SMODS.Consumable { -- Notary Stamp (Blue)
             local conv_card = G.hand.highlighted[i]
             G.E_MANAGER:add_event(Event({func = function()
                 play_sound('tarot1')
-                G.hand.highlighted[i]:juice_up(0.3, 0.5)
+                conv_card:juice_up(0.3, 0.5)
                 return true end }))
         
             G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.1,func = function()
@@ -487,7 +487,7 @@ SMODS.Consumable { -- Notary Stamp (Orange)
             local conv_card = G.hand.highlighted[i]
             G.E_MANAGER:add_event(Event({func = function()
                 play_sound('tarot1')
-                G.hand.highlighted[i]:juice_up(0.3, 0.5)
+                conv_card:juice_up(0.3, 0.5)
                 return true end }))
         
             G.E_MANAGER:add_event(Event({trigger = 'after',delay = 0.1,func = function()

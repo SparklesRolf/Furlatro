@@ -631,6 +631,7 @@ return {
 					" ",
 					"Huge thanks to the localization helpers below <3",
 					"{C:attention}FR{}: Luria12",
+					"{C:attention}ES{}: GoblinKing"
 				},
 			},
 		},

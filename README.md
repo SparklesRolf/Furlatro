@@ -77,7 +77,7 @@ of a certain language (I don't fully trust translation software, etc.), I would 
 
 Current Localization Contributors:
 
-French: Luria12
+French: Luria12, Spanish: GoblinKingDev
 
 ## Contributions
 

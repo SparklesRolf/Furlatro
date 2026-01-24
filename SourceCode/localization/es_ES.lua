@@ -5,7 +5,7 @@ return {
                 ["name"] = "Mazo Esponjoso",
                 ["text"] = {"Comienza la partida con un", "{C:dark_edition}Joker Furry que no sea {C:common}Mítico",
                             "{C:green}#1# en #2# de probabilidad de crear un {C:dark_edition}Joker",
-                            "Furry cuando se derrota la ceguera jefe", "{C:inactive}(Debe haber espacio)"}
+                            "Furry cuando se derrota la ciega jefe", "{C:inactive}(Debe haber espacio)"}
             },
             ["b_fur_stargazingdeck"] = {
                 ["name"] = "Mazo Estelar",

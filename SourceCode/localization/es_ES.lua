@@ -541,7 +541,7 @@ return {
             },
             ["pnr_fur_sparklespartner_alt"] = {
                 ["name"] = "SparklesRolf",
-                ["text"] = {"Primera carta {C:attention}puntuada{} con el palo {C:fur_stars}#3#",
+                ["text"] = {"La primera carta {C:attention}puntuada{} con el palo {C:fur_stars}#3#",
                             "genera una {C:tarot,T:c_fur_fallingstar}Estrella Fugaz",
                             "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
@@ -577,7 +577,7 @@ return {
             },
             ["pnr_fur_sokspartner"] = {
                 ["name"] = "SoksAtArt",
-                ["text"] = {"Cada {C:attention}3ra{} carta", "{C:attention}Calcetín Carta{} puntuada da",
+                ["text"] = {"Cada {C:attention}3ra{} carta", "{C:attention}Carta Calcetín{} puntuada da",
                             "{C:blue}+1 #2#", "{C:inactive}({C:attention}#1# {C:inactive}restante)"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SoksAtArt{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -621,7 +621,7 @@ return {
             },
             ["pnr_fur_astralpartner"] = {
                 ["name"] = "Guardián Astral",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de", "crear una carta {C:spectral}#3#{}",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad de", "crear una carta {C:spectral}#3#{}",
                             "cuando cartas con {C:fur_stars}#4#", "palo son {C:attention}puntuadas",
                             "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#5#{C:inactive})"},
@@ -638,15 +638,15 @@ return {
             },
             ["pnr_fur_cobaltpartner"] = {
                 ["name"] = "CobaltTheBluPanda",
-                ["text"] = {"Primera {C:attention}carta puntuada{}", "con {C:clubs}#3#{} palo",
+                ["text"] = {"La primera {C:attention}carta puntuada{}", "con el palo {C:clubs}#3#{}",
                             "da {X:chips,C:white}X#1#{} fichas"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}illyADo{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_cobaltpartner_alt"] = {
                 ["name"] = "CobaltTheBluPanda",
-                ["text"] = {"Primera carta {C:attention}puntuando{} con {C:clubs}#3#",
-                            "palo genera {C:tarot,T:c_moon}La Luna", "{C:inactive}(Funciona una vez por ronda)",
+                ["text"] = {"La primera carta {C:attention}puntuada{} con el palo {C:clubs}#3#",
+                            "genera {C:tarot,T:c_moon}La Luna", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}illyADo{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -674,7 +674,7 @@ return {
             },
             ["pnr_fur_konekopartner_alt"] = {
                 ["name"] = "The_Koneko",
-                ["text"] = {"Primera carta {C:attention}puntuando{} con {C:hearts}#3#",
+                ["text"] = {"La primera carta {C:attention}puntuando{} con {C:hearts}#3#",
                             "palo genera {C:tarot,T:c_sun}El Sol", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}The_Koneko{} en",
@@ -724,7 +724,7 @@ return {
             },
             ["pnr_fur_sparkpartner_alt"] = {
                 ["name"] = "SparkTheBird",
-                ["text"] = {"Primera carta {C:attention}puntuando{} con {C:diamonds}#4#",
+                ["text"] = {"La primera carta {C:attention}puntuando{} con {C:diamonds}#4#",
                             "palo genera {C:tarot,T:c_star}La Estrella", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#3#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SparkTheBird{} en",
@@ -890,7 +890,7 @@ return {
             },
             ["pnr_fur_schnackiofficialpartner_alt"] = {
                 ["name"] = "SchnackiOfficial",
-                ["text"] = {"Primera carta {C:attention}puntuando{} con {C:spades}#3#",
+                ["text"] = {"La primera carta {C:attention}puntuando{} con {C:spades}#3#",
                             "palo genera {C:tarot,T:c_world}El Mundo", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SchnackiOfficial{} en",
@@ -913,7 +913,7 @@ return {
                 ["text"] = {"Este GatoDragón {C:attention}debilita{} todas las cartas no-{C:fur_stars}#3#{}",
                             "Por cada {C:attention}mano jugada{} que contiene un {C:attention}Color{}, añade",
                             "{X:mult,C:white}X#1#{} Mult y aplica un {C:blue}Sello de Pata Azul{} a la {C:attention}primera{} carta",
-                            "Primera carta {C:attention}puntuada {C:fur_stars}#3#{} da {X:mult,C:white}X#2#{} Mult"},
+                            "La primera carta {C:attention}puntuada {C:fur_stars}#3#{} da {X:mult,C:white}X#2#{} Mult"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Danny{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },

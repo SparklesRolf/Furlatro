@@ -85,7 +85,7 @@ return {
             },
             ["j_fur_astral"] = {
                 ["name"] = "Guardián Astral",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad de",
                             "crear una carta {C:spectral}#5#{} cuando",
                             "se puntúan cartas con palo {C:fur_stars}#4#{}", "{C:inactive}(Debe haber espacio)",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/AstralWarden"}
@@ -101,7 +101,7 @@ return {
             ["j_fur_kalik"] = {
                 ["name"] = "KalikHusky",
                 ["text"] = {"Añade una carta {C:attention}Apestosa{}",
-                            "al mazo cuando se {C:attention}selecciona la ceguera",
+                            "al mazo cuando se {C:attention}selecciona una ciega",
                             "Gana {X:mult,C:white}X#2#{} Mult por cada",
                             "carta {C:attention}Apestosa{} en tu {C:attention}baraja completa",
                             "{C:inactive}(Actualmente {X:mult,C:white}X#1#{C:inactive} Mult)",
@@ -109,14 +109,14 @@ return {
             },
             ["j_fur_saph"] = {
                 ["name"] = "SaphiélleFox",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de", "crear una carta {C:tarot}#5#{} cuando",
-                            "se puntúan cartas con {C:spades}#4#{} palo", "{C:inactive}(Debe haber espacio)",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad de", "crear una carta {C:tarot}#5#{} cuando",
+                            "se puntúan cartas con el palo {C:spades}#4#{}", "{C:inactive}(Debe haber espacio)",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/SaphielleFox"}
             },
             ["j_fur_cobalt"] = {
                 ["name"] = "CobaltTheBluPanda",
                 ["text"] = {"Este Panda da", "{X:chips,C:white}X#1#{} Fichas cuando cartas",
-                            "con {C:clubs}#3#{} palo son puntuadas", "{C:inactive,s:0.8,E:2}#2#"}
+                            "del palo {C:clubs}#3#{} son puntuadas", "{C:inactive,s:0.8,E:2}#2#"}
             },
             ["j_fur_icesea"] = {
                 ["name"] = "Ice Sea",
@@ -126,46 +126,46 @@ return {
             ["j_fur_sparkles"] = {
                 ["name"] = "SparklesRolf",
                 ["text"] = {"Este Conejo da", "{X:mult,C:white}X#1#{} Mult cuando cartas",
-                            "con {C:fur_stars}#3#{} palo son puntuadas", "{C:inactive,s:0.8,E:2}#2#",
+                            "con el palo {C:fur_stars}#3#{} puntuan", "{C:inactive,s:0.8,E:2}#2#",
                             "{C:purple,E:1,s:0.8}twitch.tv/SparklesRolf"}
             },
             ["j_fur_spark"] = {
                 ["name"] = "SparkTheBird",
                 ["text"] = {"Este Pájaro da {X:mult,C:white}X#1#{} Mult",
-                            "cuando se puntúan {C:attention}2s{} de cualquier palo o",
+                            "cuando puntúan {C:attention}2s{} de cualquier palo o",
                             "{C:diamonds}#4#{} de cualquier rango",
-                            "{X:mult,C:white}X#2#{} Mult si un {C:attention}2{} de {C:diamonds}#4#{}", "es puntuado",
+                            "{X:mult,C:white}X#2#{} Mult si un {C:attention}2{} de {C:diamonds}#4#{}", "puntua",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/SparkTheBird"}
             },
             ["j_fur_koneko"] = {
                 ["name"] = "The_Koneko",
                 ["text"] = {"Este Gato da", "{X:mult,C:white}X#1#{} Mult cuando cartas",
-                            "con {C:hearts}#3#{} palo son puntuadas", "{C:inactive,s:0.8,E:2}#2#",
+                            "con el palo {C:hearts}#3#{} son puntuadas", "{C:inactive,s:0.8,E:2}#2#",
                             "{C:purple,E:1,s:0.8}twitch.tv/The_Koneko"}
             },
             ["j_fur_curiousangel"] = {
                 ["name"] = "CuriousAngel",
-                ["text"] = {"Tiene una {C:green}#3# en #4#{} probabilidad de aplicar",
+                ["text"] = {"Tiene {C:green}#3# en #4#{} de probabilidad de aplicar",
                             "{C:dark_edition}#6#{} a cartas puntuadas o Jokers",
                             "{C:inactive}(No sobrescribirá ediciones existentes)",
                             "Este CiervoZorro gana {X:mult,C:white}X#2#{} Mult cuando",
-                            "se puntúan cartas de juego {C:dark_edition}#6#{}",
+                            "puntúan cartas de {C:dark_edition}#6#{}",
                             "{C:inactive}(Actualmente {X:mult,C:white}X#1#{C:inactive} Mult)",
                             "{C:inactive,s:0.8,E:2}#5#", "{C:purple,E:1,s:0.8}twitch.tv/AngelDeerFox"}
             },
             ["j_fur_skips"] = {
                 ["name"] = "DelusionalSkips",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad",
-                            "de ganar {C:attention}instantáneamente{} la ceguera",
-                            "{C:inactive}(Cegueras jefe máximo 4/#4# probabilidades)",
-                            "Cuando se {C:attention}saltean cegueras{} aparece", "una {C:attention}Etiqueta Skips{}",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad",
+                            "de ganar {C:attention}instantáneamente{} la ciega",
+                            "{C:inactive}(Ciega jefe máximo 4/#4# probabilidades)",
+                            "Cuando se {C:attention}saltan ciegas{} aparece", "una {C:attention}Etiqueta Skips{}",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/DelusionalSkips"}
             },
             ["j_fur_multiplayerskips"] = {
                 ["name"] = "DelusionalSkips",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad",
-                            "de ganar {C:attention}instantáneamente{} cegueras no-jefe",
-                            "Cuando se {C:attention}saltean cegueras{} aparece", "una {C:attention}Etiqueta Skips{}",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad",
+                            "de ganar {C:attention}instantáneamente{} ciegas no-jefe",
+                            "Cuando se {C:attention}saltan ciegas{} aparece", "una {C:attention}Etiqueta Skips{}",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/DelusionalSkips"}
             },
             ["j_fur_illy"] = {
@@ -177,7 +177,7 @@ return {
             },
             ["j_fur_cryptidluposity"] = {
                 ["name"] = "Luposity",
-                ["text"] = {"Este Lobo gana {X:mult,C:white}X#2#{} Mult", "cuando se usan {C:green}#4#{} cartas",
+                ["text"] = {"Este Lobo gana {X:mult,C:white}X#2#{} Mult", "cuando se usan {C:green}#4#{}",
                             "{C:inactive}(Actualmente {X:mult,C:white}X#1#{C:inactive} mult)",
                             "{C:inactive,s:0.8,E:2}#3#", "{C:purple,E:1,s:0.8}twitch.tv/Luposity"}
             },
@@ -189,8 +189,8 @@ return {
             },
             ["j_fur_soks"] = {
                 ["name"] = "SoksAtArt",
-                ["text"] = {"Esta Cabra da", "{C:blue}+#1# #3#{} cuando {C:attention}Calcetín{}",
-                            "cartas son puntuadas", "{C:inactive,s:0.8,E:2}#2#",
+                ["text"] = {"Esta Cabra da", "{C:blue}+#1# #3#{} cuando cartas {C:attention}Calcetín{}",
+                            "puntuan", "{C:inactive,s:0.8,E:2}#2#",
                             "{C:purple,E:1,s:0.8}twitch.tv/SoksAtArt"}
             },
             ["j_fur_talismansephirapaws"] = {
@@ -208,9 +208,9 @@ return {
             },
             ["j_fur_talismanxavierorjose"] = {
                 ["name"] = "Joseeeeee",
-                ["text"] = {"{C:green}#1# en #2#{} probabilidad de {C:attention}mejorar{} cartas no mejoradas",
+                ["text"] = {"{C:green}#1# en #2#{} de probabilidad de {C:attention}mejorar{} cartas no mejoradas",
                             "a una mejora aleatoria",
-                            "{C:green}#3# en #4#{} probabilidad de {C:attention}eliminar{} la mejora",
+                            "{C:green}#3# en #4#{} de probabilidad de {C:attention}eliminar{} la mejora",
                             "de cartas puntuadas por {X:money,C:white}+X#5#{} {C:money}$",
                             "Al {C:attention}final de ronda{}, da {C:money}${} igual a",
                             "{C:inactive}({C:money}$ actual {C:inactive} x {C:money}#6#{C:inactive})",
@@ -218,9 +218,9 @@ return {
             },
             ["j_fur_xavierorjose"] = {
                 ["name"] = "Joseeeeee",
-                ["text"] = {"{C:green}#1# en #2#{} probabilidad de {C:attention}mejorar{} cartas no mejoradas",
+                ["text"] = {"{C:green}#1# en #2#{} de probabilidad de {C:attention}mejorar{} cartas no mejoradas",
                             "a una {C:attention}mejora aleatoria{}",
-                            "{C:green}#3# en #4#{} probabilidad de {C:attention}eliminar{} la",
+                            "{C:green}#3# en #4#{} de probabilidad de {C:attention}eliminar{} la",
                             "{C:attention}mejora{} de cartas puntuadas por {C:money}+$#6#{}",
                             "Al {C:attention}final de ronda{}, da {C:money}$#5#{}", "{C:inactive,s:0.8,E:2}#7#"}
             },
@@ -275,9 +275,9 @@ return {
             },
             ["j_fur_talismankris57"] = {
                 ["name"] = "Kris_57",
-                ["text"] = {"Cuando un {C:attention}5{} es puntuado, este Joker",
+                ["text"] = {"Cuando un {C:attention}5{} puntua, este Joker",
                             "gana {X:dark_edition,C:white}^#4#{} Mult",
-                            "Cuando un {C:attention}7{} es puntuado, este Joker",
+                            "Cuando un {C:attention}7{} puntua, este Joker",
                             "gana {X:dark_edition,C:white}^#3#{} fichas",
                             "{C:dark_edition}Sinergia:{} Da {C:money}$#6#{} cuando puntúas",
                             "un {C:attention}5{} o {C:attention}7{} si tienes {C:dark_edition}Iridia",
@@ -286,9 +286,9 @@ return {
             },
             ["j_fur_kris57"] = {
                 ["name"] = "Kris_57",
-                ["text"] = {"Cuando un {C:attention}5{} es puntuado, este Joker", "gana {X:red,C:white}X#4#{} Mult",
-                            "Cuando un {C:attention}7{} es puntuado, este Joker", "gana {X:chips,C:white}X#3#{} fichas",
-                            "{C:dark_edition}Sinergia:{} Da {C:money}$#6#{} cuando puntúas",
+                ["text"] = {"Cuando un {C:attention}5{} puntua, este Joker", "gana {X:red,C:white}X#4#{} Mult",
+                            "Cuando un {C:attention}7{} puntua, este Joker", "gana {X:chips,C:white}X#3#{} fichas",
+                            "{C:dark_edition}Sinergia:{} Da {C:money}$#6#{} cuando puntua",
                             "un {C:attention}5{} o {C:attention}7{} si tienes {C:dark_edition}Iridia",
                             "{C:inactive}(Actualmente {X:chips,C:white}X#1#{C:inactive} fichas y {X:mult,C:white}X#2#{C:inactive} Mult)",
                             "{C:inactive,s:0.8,E:2}#5#"}
@@ -361,7 +361,7 @@ return {
             },
             ["j_fur_maltnoodlez"] = {
                 ["name"] = "MaltNoodlez",
-                ["text"] = {"Al seleccionar cegueras este Conejo {C:red}debilita",
+                ["text"] = {"Al seleccionar una ciega este Conejo {C:red}debilita",
                             "un Joker aleatorio hasta el {C:attention}final de ronda",
                             "{C:inactive}(Excluyéndose a sí mismo)", "Mientras se juega una ronda, copia la",
                             "habilidad del Joker {C:attention}más a la derecha{}", "{C:inactive,s:0.8,E:2}#1#",
@@ -424,9 +424,7 @@ return {
                             "ayudar con la {C:attention,E:2,s:1.3}Localización{}, o simplemente conversar con otros. ¡Únete al Discord! <3",
                             "{s:0.9}Haz clic para unirte:{C:dark_edition,E:1,s:1.5}https://discord.gg/fCnxr4dWfh{}",
                             " ", "¡Enorme agradecimiento a los ayudantes de localización a continuación! <3",
-                            "{C:attention}FR{}: Luria12",
-							"{C:attention}ES{}: GoblinKing"
-						}
+                            "{C:attention}FR{}: Luria12", "{C:attention}ES{}: GoblinKing"}
             }
         },
         ["Other"] = {
@@ -989,7 +987,7 @@ return {
                 ["name"] = "Manga Esponjosa",
                 ["text"] = {"Comienza la partida con un", "{C:dark_edition}Furry{} #1# aleatorio no-{C:common}Mítico",
                             "{C:green}#4# en #5#{} probabilidad de crear un {C:dark_edition}Furry",
-                            "#1# cuando se derrota una ceguera jefe", "{C:inactive}(Debe haber espacio)"}
+                            "#1# cuando se derrota una ciega jefe", "{C:inactive}(Debe haber espacio)"}
             },
             ["sleeve_fur_floofysleeve_alt"] = {
                 ["name"] = "Manga Esponjosa",
@@ -1153,7 +1151,7 @@ return {
             },
             ["c_fur_oatmealraisincookie"] = {
                 ["name"] = "Galleta de Avena y Pasas",
-                ["text"] = {"{C:red}Duplica{} el objetivo de la ceguera",
+                ["text"] = {"{C:red}Duplica{} el objetivo de la ciega",
                             "Da {C:attention}#1#{} {C:attention}Etiquetas{} aleatorias"}
             }
         },

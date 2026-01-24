@@ -429,24 +429,24 @@ return {
         },
         ["Other"] = {
             ["p_fur_miniuncommon"] = {
-                ["name"] = "Mini Paquete Furry Infrecuente",
+                ["name"] = "Mini Paquete Furry Poco Comun",
                 ["text"] = {"Elige {C:attention}#2#{} de hasta {C:attention}#1#{} ",
-                            "{C:uncommon}Jokers Furry {C:dark_edition}Infrecuentes{}"}
+                            "{C:uncommon}Jokers Furry {C:dark_edition}Poco Comunes{}"}
             },
             ["p_fur_uncommon"] = {
-                ["name"] = "Paquete Furry Infrecuente",
+                ["name"] = "Paquete Furry Poco Comun",
                 ["text"] = {"Elige {C:attention}#2#{} de hasta {C:attention}#1#{} ",
-                            "{C:uncommon}Jokers Furry {C:dark_edition}Infrecuentes{}"}
+                            "{C:uncommon}Jokers Furry {C:dark_edition}Poco Comunes{}"}
             },
             ["p_fur_jumbouncommon"] = {
-                ["name"] = "Paquete Furry Infrecuente Jumbo",
+                ["name"] = "Paquete Furry Poco Comun Jumbo",
                 ["text"] = {"Elige {C:attention}#2#{} de hasta {C:attention}#1#{} ",
-                            "{C:uncommon}Jokers Furry {C:dark_edition}Infrecuentes{}"}
+                            "{C:uncommon}Jokers Furry {C:dark_edition}Poco Comunes{}"}
             },
             ["p_fur_specialuncommon"] = {
-                ["name"] = "Paquete Furry Infrecuente Especial",
+                ["name"] = "Paquete Furry Poco Comun Especial",
                 ["text"] = {"Elige {C:attention}#2#{} de hasta {C:attention}#1#{} ",
-                            "{C:uncommon}Jokers Furry {C:dark_edition}Infrecuentes{}",
+                            "{C:uncommon}Jokers Furry {C:dark_edition}Poco Comunes{}",
                             "con una {C:attention}edición{} garantizada"}
             },
             ["p_fur_minirare"] = {
@@ -526,23 +526,23 @@ return {
                 ["name"] = "Sello de Pata (Naranja)",
                 ["label"] = "Sello de Pata",
                 ["text"] = {"Puntúa {X:chips,C:white}X#2#{} fichas y {X:mult,C:white}X#1#{} Mult",
-                            "Da {C:money}$#3#{}", "{C:green}#6# en #4#{} probabilidad de una carta {C:tarot}#7#{}",
-                            "{C:green}#6# en #5#{} probabilidad de una carta {C:spectral}#8#{}",
+                            "Da {C:money}$#3#{}", "{C:green}#6# en #4#{} de probabilidad de una carta {C:tarot}#7#{}",
+                            "{C:green}#6# en #5#{} de probabilidad de una carta {C:spectral}#8#{}",
                             "{C:inactive}(Debe haber espacio)"}
             }
         },
         ["Partner"] = {
             ["pnr_fur_sparklespartner"] = {
                 ["name"] = "SparklesRolf",
-                ["text"] = {"Primera {C:attention}carta puntuada{}", "con {C:fur_stars}#3#{} palo",
+                ["text"] = {"Primera {C:attention}carta puntuada{}", "con el palo {C:fur_stars}#3#{}",
                             "da {X:mult,C:white}X#1#{} Mult"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SparklesRolf{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_sparklespartner_alt"] = {
                 ["name"] = "SparklesRolf",
-                ["text"] = {"Primera carta {C:attention}puntuando{} con {C:fur_stars}#3#",
-                            "palo genera una {C:tarot,T:c_fur_fallingstar}Estrella Fugaz",
+                ["text"] = {"Primera carta {C:attention}puntuada{} con el palo {C:fur_stars}#3#",
+                            "genera una {C:tarot,T:c_fur_fallingstar}Estrella Fugaz",
                             "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SparklesRolf{} en",
@@ -1083,7 +1083,7 @@ return {
                 ["text"] = {"Próxima tienda tiene un", "paquete {C:dark_edition}Furry{} aleatorio gratis"}
             },
             ["tag_fur_uncommonpawtag"] = {
-                ["name"] = "Etiqueta de Pata Infrecuente",
+                ["name"] = "Etiqueta de Pata Poco Comun",
                 ["text"] = {"La tienda tiene un", "{C:uncommon}#1# {C:dark_edition}Joker Furry{} gratis"}
             },
             ["tag_fur_rarepawtag"] = {

@@ -986,13 +986,13 @@ return {
             ["sleeve_fur_floofysleeve"] = {
                 ["name"] = "Manga Esponjosa",
                 ["text"] = {"Comienza la partida con un", "{C:dark_edition}Furry{} #1# aleatorio no-{C:common}Mítico",
-                            "{C:green}#4# en #5#{} probabilidad de crear un {C:dark_edition}Furry",
+                            "{C:green}#4# en #5#{} de probabilidad de crear un {C:dark_edition}Furry",
                             "#1# cuando se derrota una ciega jefe", "{C:inactive}(Debe haber espacio)"}
             },
             ["sleeve_fur_floofysleeve_alt"] = {
                 ["name"] = "Manga Esponjosa",
                 ["text"] = {"{C:common}Furries Míticos{} ahora pueden aparecer", "al comenzar la partida",
-                            "{C:dark_edition}Furry{} #2# generado por jefes", "tiene una {C:attention}#3#{} garantizada"}
+                            "{C:dark_edition}Furry{} #2# generado por jefes", "tiene un {C:attention}#3#{} garantizada"}
             },
             ["sleeve_fur_stargazerssleeve"] = {
                 ["name"] = "Manga Estelar",
@@ -1038,7 +1038,7 @@ return {
             },
             ["c_fur_floofball"] = {
                 ["name"] = "Bola Esponjosa",
-                ["text"] = {"Crea un", "{C:dark_edition}Furry{} {C:attention}Joker{} aleatorio",
+                ["text"] = {"Crea un", "{C:attention}Joker{} {C:dark_edition}Furry{} aleatorio",
                             "Establece dinero en {C:money}$0{}", "{C:inactive}(Debe haber espacio)"}
             },
             ["c_fur_rednotarystamp"] = {

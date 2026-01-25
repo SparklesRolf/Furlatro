@@ -904,7 +904,7 @@ return {
             },
             ["pnr_fur_diablo2324partner_alt"] = {
                 ["name"] = "Diablo2324",
-                ["text"] = {"{C:dark_edition}Diablo2324{} es", "{C:attention}doble{} de fuerte"},
+                ["text"] = {"{C:dark_edition}Diablo2324{} es el", "{C:attention}doble{} de fuerte"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Diablo2324{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
@@ -926,21 +926,21 @@ return {
             },
             ["pnr_fur_iridiapartner"] = {
                 ["name"] = "Iridia",
-                ["text"] = {"Primera {C:attention}carta puntuada{} da",
+                ["text"] = {"La primera {C:attention}carta puntuada{} da",
                             "{X:chips,C:white}X#1#{} fichas y {X:mult,C:white}X#2#{} Mult"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Iridia{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_iridiapartner_alt"] = {
                 ["name"] = "Iridia",
-                ["text"] = {"{C:dark_edition}Iridia{} es", "{C:attention}doble{} de fuerte"},
+                ["text"] = {"{C:dark_edition}Iridia{} es el", "{C:attention}doble{} de fuerte"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Iridia{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_parrotdashpartner"] = {
                 ["name"] = "Parrot Dash",
                 ["text"] = {"Este Zorro da {C:mult}+Mult{} usando la siguiente fórmula",
-                            "{C:mult}#1#{C:inactive} + ({C:attention}#3#{C:inactive} x {C:attention}#4#{C:inactive})",
+                            "{C:mult}#1#{C:inactive} + ({C:attention}#3#{C:inactive} x {C:attention}#4#{C:inactive})", --🤓
                             "{C:inactive}(Actualmente {C:mult}+#2#{C:inactive} Mult)"}
             },
             ["pnr_fur_parrotdashpartner_alt"] = {

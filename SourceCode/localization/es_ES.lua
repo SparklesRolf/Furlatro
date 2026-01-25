@@ -653,13 +653,13 @@ return {
             },
             ["pnr_fur_iceseapartner"] = {
                 ["name"] = "IceSea",
-                ["text"] = {"Primera {C:attention}carta puntuada{} será", "mejorada a", "una {C:attention}Carta Bono"},
+                ["text"] = {"La primera {C:attention}carta puntuada{} será", "mejorada a", "una {C:attention}Carta Bono"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}IceSea{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_iceseapartner_alt"] = {
                 ["name"] = "IceSea",
-                ["text"] = {"Primera {C:attention}Carta Bono puntuando{}",
+                ["text"] = {"La primera {C:attention}Carta Bono puntuada{}",
                             "genera {C:tarot,T:c_hierophant}El Hierofante", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#1#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}IceSea{} en",
@@ -667,23 +667,23 @@ return {
             },
             ["pnr_fur_konekopartner"] = {
                 ["name"] = "The_Koneko",
-                ["text"] = {"Primera {C:attention}carta puntuada{}", "con {C:hearts}#3#{} palo",
+                ["text"] = {"Primera {C:attention}carta puntuada{}", "con el palo {C:hearts}#3#{}",
                             "da {X:mult,C:white}X#1#{} Mult"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}The_Koneko{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_konekopartner_alt"] = {
                 ["name"] = "The_Koneko",
-                ["text"] = {"La primera carta {C:attention}puntuando{} con {C:hearts}#3#",
-                            "palo genera {C:tarot,T:c_sun}El Sol", "{C:inactive}(Funciona una vez por ronda)",
+                ["text"] = {"La primera carta {C:attention}puntuada{} con el palo {C:hearts}#3#",
+                            "genera {C:tarot,T:c_sun}El Sol", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}The_Koneko{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_saphpartner"] = {
                 ["name"] = "SaphiélleFox",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de", "crear una carta {C:tarot}#3#{}",
-                            "cuando cartas con {C:spades}#4#", "palo son {C:attention}puntuadas",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad de", "crear una carta {C:tarot}#3#{}",
+                            "cuando cartas el palo {C:spades}#4#", "son {C:attention}puntuadas",
                             "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#5#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SaphiélleFox{} en",
@@ -699,9 +699,9 @@ return {
             },
             ["pnr_fur_skipspartner"] = {
                 ["name"] = "DelusionalSkips",
-                ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de",
-                            "ganar instantáneamente cegueras no-{C:attention}jefe{}",
-                            "Por cada {C:attention}2{} cegueras saltadas", "genera una {C:attention}Etiqueta Skips",
+                ["text"] = {"Tiene {C:green}#1# en #2#{} de probabilidad de",
+                            "ganar instantáneamente ciegas no-{C:attention}jefe{}",
+                            "Por cada {C:attention}2{} ciegas saltadas", "genera una {C:attention}Etiqueta Skips",
                             "{C:inactive}({C:attention}#3#{C:inactive} restante)"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}DelusionalSkips{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -734,7 +734,7 @@ return {
                 ["name"] = "Luposity",
                 ["text"] = {"Al {C:attention}final de ronda{} añade una",
                             "{C:attention}galleta{} al {C:dark_edition}tarro de galletas",
-                            "Cuando {C:attention}se hace clic{}, genera un",
+                            "Cuando {C:attention}se hace click{}, genera una",
                             "{C:attention}galleta{} consumible aleatoria",
                             "{C:inactive}(Capacidad del tarro: {C:attention}#1#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Luposity{} en",
@@ -742,9 +742,9 @@ return {
             },
             ["pnr_fur_lupositypartner_alt"] = {
                 ["name"] = "Luposity",
-                ["text"] = {"Al {C:attention}final de ronda{} añade una",
+                ["text"] = {"Al {C:attention}final de la ronda{} añade una",
                             "{C:attention}galleta{} al {C:dark_edition}tarro de galletas",
-                            "Cuando {C:attention}se hace clic{}, genera un",
+                            "Cuando {C:attention}se hace click{}, genera una",
                             "{C:attention}galleta{} consumible aleatoria",
                             "{C:inactive}(Capacidad del tarro: {C:attention}#1#{C:inactive})",
                             "Consumibles de {C:attention}galleta{} usados escalan",
@@ -756,14 +756,14 @@ return {
                 ["name"] = "CuriousAngel",
                 ["text"] = {"Si la primera {C:attention}carta puntuada{} es {C:dark_edition}#3#",
                             "este CiervoZorro gana {X:mult,C:white}X#4#{} Mult",
-                            "si no lo es, tiene una {C:green}#1# en #2#{} probabilidad de convertirse en {C:dark_edition}#3#",
+                            "si no lo es, tiene {C:green}#1# en #2#{} de probabilidad de convertirse en {C:dark_edition}#3#",
                             "{C:inactive}(Actualmente {X:mult,C:white}X#5#{C:inactive} Mult)"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}CuriousAngel{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_curiousangelpartner_alt"] = {
                 ["name"] = "CuriousAngel",
-                ["text"] = {"{C:attention}Duplica{} las {C:green}probabilidades{} y",
+                ["text"] = {"{C:attention}Duplica{} las {C:green}probabilidades{} y el",
                             "{C:attention}escalado{} para {C:dark_edition}CuriousAngel"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}CuriousAngel{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -786,14 +786,14 @@ return {
             },
             ["pnr_fur_xavierorjosepartner"] = {
                 ["name"] = "Joseeeeee",
-                ["text"] = {"Primera {C:attention}carta puntuada{} será", "{C:attention}mejorada{} a una",
+                ["text"] = {"La primera {C:attention}carta puntuada{} será", "{C:attention}mejorada{} a una",
                             "{C:attention}mejora{} aleatoria"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Joseeeeee{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_xavierorjosepartner_alt"] = {
                 ["name"] = "Joseeeeee",
-                ["text"] = {"{C:attention}Duplica{} las {C:green}probabilidades{} y",
+                ["text"] = {"{C:attention}Duplica{} las {C:green}probabilidades{} y el",
                             "{C:attention}escalado{} para {C:dark_edition}Joseeeeee"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Joseeeeee{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -807,8 +807,8 @@ return {
             ["pnr_fur_foxxlyduskfurpartner_alt"] = {
                 ["name"] = "FoxxlyDuskFur",
                 ["text"] = {"Da {C:attention}1{}", "{C:green}Reinicio{} gratis por tienda",
-                            "{C:dark_edition}FoxxlyDuskFur{} escala", "{C:attention}doble{} de rápido",
-                            "{C:inactive}(Escalado se acumula con sinergia)"},
+                            "{C:dark_edition}FoxxlyDuskFur{} escala el", "{C:attention}doble{} de rápido",
+                            "{C:inactive}(El escalado se acumula con sinergia)"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}FoxxlyDuskFur{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
@@ -823,7 +823,7 @@ return {
             ["pnr_fur_kris57partner_alt"] = {
                 ["name"] = "Kris_57",
                 ["text"] = {"{C:dark_edition}Kris_57{} escala al", "{C:attention}doble{} de velocidad",
-                            "y da {C:attention}doble{} de {C:money}$"},
+                            "y da el {C:attention}doble{} de {C:money}$"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Kris_57{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
@@ -846,7 +846,7 @@ return {
             },
             ["pnr_fur_maltnoodlezpartner"] = {
                 ["name"] = "MaltNoodlez",
-                ["text"] = {"Al {C:attention}establecer cegueras {C:red}debilita",
+                ["text"] = {"Al {C:attention}establecer ciegas {C:red}debilita",
                             "un Joker {C:attention}aleatorio{} hasta el {C:attention}final de ronda",
                             "Mientras {C:attention}se juega una ronda{}, copia la",
                             "habilidad del Joker {C:attention}más a la derecha{}"},
@@ -856,7 +856,7 @@ return {
             ["pnr_fur_maltnoodlezpartner_alt"] = {
                 ["name"] = "MaltNoodlez",
                 ["text"] = {"{C:dark_edition}MaltNoodlez{} ya no debilita",
-                            "Jokers al {C:attention}establecer cegueras",
+                            "Jokers al {C:attention}establecer ciegas",
                             "Mientras {C:attention}se juega una ronda{}, copia la",
                             "habilidad del Joker {C:attention}más a la derecha{}"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}MaltNoodlez{} en",
@@ -866,10 +866,10 @@ return {
                 ["name"] = "Nemzata",
                 ["text"] = {"{C:attention}Clic izquierdo{} para disparar una flecha",
                             "a una {C:attention}carta de juego{} aleatoria",
-                            "{C:green}#1# en #2#{} probabilidad de {C:red}eliminar{} la carta",
+                            "{C:green}#1# en #2#{} de probabilidad de {C:red}eliminar{} la carta",
                             "Cada {C:attention}eliminación{} guarda {C:money}250{} monedas {C:inactive}[{C:money}$2.5{C:inactive}]",
                             "{C:attention}Clic derecho{} para cobrar todas las monedas guardadas",
-                            "Al {C:attention}establecer cegueras{}, restaura toda la munición",
+                            "Al {C:attention}establecer ciegas{}, restaura toda la munición",
                             "{C:inactive}(Capacidad de munición: {C:attention}#3#{C:inactive}/3 / Monedas actuales: {C:money}#4# {C:inactive}[{C:money}$#5#{C:inactive}])"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}Nemzata{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -883,15 +883,15 @@ return {
             },
             ["pnr_fur_schnackiofficialpartner"] = {
                 ["name"] = "SchnackiOfficial",
-                ["text"] = {"Primera {C:attention}carta puntuada{}", "con {C:spades}#3#{} palo",
+                ["text"] = {"Primera {C:attention}carta puntuada{}", "con el palo {C:spades}#3#{}",
                             "da {X:mult,C:white}X#1#{} Mult"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SchnackiOfficial{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
             },
             ["pnr_fur_schnackiofficialpartner_alt"] = {
                 ["name"] = "SchnackiOfficial",
-                ["text"] = {"La primera carta {C:attention}puntuando{} con {C:spades}#3#",
-                            "palo genera {C:tarot,T:c_world}El Mundo", "{C:inactive}(Funciona una vez por ronda)",
+                ["text"] = {"La primera carta {C:attention}puntuada{} con el palo {C:spades}#3#",
+                            "genera {C:tarot,T:c_world}El Mundo", "{C:inactive}(Funciona una vez por ronda)",
                             "{C:inactive}(Actualmente {C:attention}#2#{C:inactive})"},
                 ["unlock"] = {"Gana una partida con", "{C:dark_edition}SchnackiOfficial{} en",
                               "dificultad {C:attention}Apuesta Dorada{}"}
@@ -1160,7 +1160,7 @@ return {
                 ["name"] = "Arco de Nemz",
                 ["text"] = {"Tiene una {C:green}#1# en #2#{} probabilidad de {C:red}eliminar",
                             "la carta {C:attention}#3#{} seleccionada cuando se usa",
-                            "Al {C:attention}seleccionar cegueras{}, restaura toda la munición",
+                            "Al {C:attention}seleccionar ciegas{}, restaura toda la munición",
                             "{C:inactive}(Munición actual: {C:attention}#4#{C:inactive}/#5#)"}
             }
         }

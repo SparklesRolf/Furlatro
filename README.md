@@ -30,9 +30,9 @@ More Cross-Mod implementations may come out in future updates!
 
 ### Current Cross-Mod Content
 * [Cryptid](https://github.com/SpectralPack/Cryptid) *1 Joker*
-* [Talisman](https://github.com/SpectralPack/Talisman) *9 Jokers*
+* [Talisman](https://github.com/SpectralPack/Talisman) *11 Jokers*
 * [Balatro Multiplayer](https://github.com/Balatro-Multiplayer/BalatroMultiplayer) *1 Joker*
-* [PartnerAPI](https://github.com/Icecanno/Partner-API) *28 Partners*
+* [PartnerAPI](https://github.com/Icecanno/Partner-API) *32 Partners*
 
 ### Note: Cross-Mod mods above are not required for Furlatro to function properly
 
@@ -43,7 +43,7 @@ A 5th suit (stars) and 4 playable hands (Spectrum, *identical to SixSuits*)
 <img src="gitassets/Additions.png" alt="Additons" width="500">
 <img src="gitassets/Additions2.png" alt="Additions (Other)" width="500">
 
-*With 24 unique achievements!*
+*With 25 unique achievements!*
 
 ## Jokers
 

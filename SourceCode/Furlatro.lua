@@ -441,22 +441,18 @@ function SMODS.create_mod_badges(obj, badges)
 end
 
 furry_mod.custom_ui = function(nodes) -- Following lines from PartnerAPI (For mod description links)
-    local _, description = unpack(nodes)
-    local discord_deepfind = SMODS.deepfind(description, "https://discord.gg/fCnxr4dWfh", true, immediate)[1]
-	local yrense_deepfind = SMODS.deepfind(description, "Yrense", true, immediate)[1]
-	local scruffy_deepfind = SMODS.deepfind(description, "ScruffyBrush", true, immediate)[1]
-    if discord_deepfind then
-        local discord_link = discord_deepfind.objtree[#discord_deepfind.objtree-3]
-        discord_link.config.button = "discord_invite"
-    end
-	if yrense_deepfind then
-        local yrense_link = yrense_deepfind.objtree[#yrense_deepfind.objtree-3]
-        yrense_link.config.button = "yrense_vgen"
-    end
-	if scruffy_deepfind then
-        local scruffy_link = scruffy_deepfind.objtree[#scruffy_deepfind.objtree-3]
-        scruffy_link.config.button = "scruffybrush"
-    end
+    local description = nodes[2]
+	local function setbtn(tx, btn)
+		local o = SMODS.deepfind(description, tx, true, true)[1]
+		if o then
+			o.objtree[#o.objtree-3][1].config.button = btn
+		else
+			print("Didn't find text \""..tx.."\"")
+		end
+	end
+	setbtn("ScruffyBrush", "scruffybrush")
+	setbtn("Yrense", "yrense_vgen")
+	setbtn("https://discord.gg/fCnxr4dWfh", "discord_invite")
 end
 G.FUNCS.discord_invite = function(e)
     love.system.openURL("https://discord.gg/fCnxr4dWfh")

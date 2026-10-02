@@ -32,7 +32,7 @@ SMODS.Joker {
     calculate = function(self, card, context)
         if card.debuff then return nil end
         if context.individual and context.cardarea == G.play then
-            if context.other_card:is_suit('fur_stars') or context.other_card:is_suit('six_Stars') then
+            if context.other_card:is_suit('fur_stars') then
                 if G.GAME.selected_partner == "pnr_fur_astralpartner" then
                     if SMODS.pseudorandom_probability(card, "j_fur_astral", 1, 10, "fur_astral") then
                         G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 2
@@ -216,14 +216,14 @@ if not Talisman then -- Danny
                     if G.GAME.selected_partner ~= "pnr_fur_dannypartner" then
 	    	            if G.deck and card.added_to_deck then
 	    	        	    for i, v in pairs(G.deck.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
 	    	            end
 	    	            if G.hand and card.added_to_deck then
 	    	        	    for i, v in pairs(G.hand.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
@@ -237,14 +237,14 @@ if not Talisman then -- Danny
             if G.GAME.selected_partner ~= "pnr_fur_dannypartner" then
 	    	    if G.deck and card.added_to_deck then
 	    		    for i, v in pairs(G.deck.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, true, "fur_danny")
 	    		    	end
 	    		    end
 	    	    end
 	    	    if G.hand and card.added_to_deck then
 	    		    for i, v in pairs(G.hand.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, true, "fur_danny")
 	    		    	end
 	    		    end

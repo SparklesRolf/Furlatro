@@ -95,7 +95,7 @@ Partner_API.Partner { -- AstralWarden
 
             if context.individual and context.cardarea == G.play then
                 if card.ability.spawnstate == "Active" then 
-                    if context.other_card:is_suit('fur_stars') or context.other_card:is_suit('six_Stars') then
+                    if context.other_card:is_suit('fur_stars') then
                         if SMODS.pseudorandom_probability(card, "pnr_fur_astralpartner", 1, 10, "pnr_astralpartner") then
                             G.GAME.consumeable_buffer = G.GAME.consumeable_buffer + 1
                             G.E_MANAGER:add_event(Event({
@@ -346,7 +346,7 @@ Partner_API.Partner { -- Danny
         if link_level ~= 1 then
             if context.hand_drawn or context.before or context.end_of_round or context.open_booster or context.selling_card then
                 for i = 1, #G.playing_cards do
-	                if not (G.playing_cards[i]:is_suit("fur_stars") or G.playing_cards[i]:is_suit("six_Stars")) then
+	                if not G.playing_cards[i]:is_suit("fur_stars") then
 	                	SMODS.debuff_card(G.playing_cards[i], true, "fur_danny")
                     else
                         SMODS.debuff_card(G.playing_cards[i], false, "fur_danny")
@@ -2352,7 +2352,7 @@ Partner_API.Partner { -- SparklesRolf
         if context.individual and context.cardarea == G.play then
             local first_star = nil
             for i = 1, #context.scoring_hand do
-                if context.scoring_hand[i]:is_suit("fur_stars") or context.scoring_hand[i]:is_suit("six_Stars") then
+                if context.scoring_hand[i]:is_suit("fur_stars") then
                     first_star = context.scoring_hand[i]
                     break
                 end

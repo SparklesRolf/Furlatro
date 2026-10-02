@@ -131,7 +131,15 @@ end
 if next(SMODS.find_mod("partner")) then
 	SMODS.load_file("cross-mod/Partners.lua")()
 end
-
+if next(SMODS.find_mod("SixSuits")) then
+	local is_suit_ref = Card.is_suit
+	function Card:is_suit(n, ...)
+		if n == "fur_stars" or n == "six_Stars" then
+			return is_suit_ref(self, "fur_stars", ...) or is_suit_ref(self, "six_Stars", ...)
+		end
+		return is_suit_ref(self, n, ...)
+	end
+end
 
 
 

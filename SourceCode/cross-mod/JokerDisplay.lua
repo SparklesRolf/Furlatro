@@ -19,7 +19,7 @@ jd_def["j_fur_enviousjoker"] = { -- Envious Joker
         local text, _, scoring_hand = JokerDisplay.evaluate_hand()
         for _, scoring_card in pairs(G.hand.highlighted) do
             if scoring_card.config.center.key == "m_fur_ghostcard" then
-                if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                if scoring_card:is_suit("fur_stars") then
                     ghostcards = ghostcards + 1
                 end
             end
@@ -27,7 +27,7 @@ jd_def["j_fur_enviousjoker"] = { -- Envious Joker
 
         if text ~= 'Unknown' then
             for _, scoring_card in pairs(scoring_hand) do
-                if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                if scoring_card:is_suit("fur_stars") then
                     count = count + JokerDisplay.calculate_card_triggers(scoring_card, scoring_hand)
                         
                     if scoring_card.config.center.key == "m_fur_ghostcard" then
@@ -175,7 +175,7 @@ jd_def["j_fur_astral"] = { -- AstralWarden
         if text ~= 'Unknown' then
             for _, scoring_card in pairs(G.hand.highlighted) do
                 if scoring_card.config.center.key == "m_fur_ghostcard" then
-                    if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                    if scoring_card:is_suit("fur_stars") then
                         ghostcards = ghostcards + 1
                     end
                 end
@@ -183,7 +183,7 @@ jd_def["j_fur_astral"] = { -- AstralWarden
 
             if text ~= 'Unknown' then
                 for _, scoring_card in pairs(scoring_hand) do
-                    if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                    if scoring_card:is_suit("fur_stars") then
                         if next(SMODS.find_mod("partner")) then
                             if G.GAME.selected_partner == "pnr_fur_astralpartner" then
                                 count = count + (JokerDisplay.calculate_card_triggers(scoring_card, scoring_hand) * 2)
@@ -477,7 +477,7 @@ jd_def["j_fur_sparkles"] = { -- SparklesRolf
             local text, _, scoring_hand = JokerDisplay.evaluate_hand()
             for _, scoring_card in pairs(G.hand.highlighted) do
                 if scoring_card.config.center.key == "m_fur_ghostcard" then
-                    if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                    if scoring_card:is_suit("fur_stars") then
                         ghostcards = ghostcards + 1
                     end
                 end
@@ -485,7 +485,7 @@ jd_def["j_fur_sparkles"] = { -- SparklesRolf
 
             if text ~= 'Unknown' then
                 for _, scoring_card in pairs(scoring_hand) do
-                    if scoring_card:is_suit("fur_stars") or scoring_card:is_suit("six_Stars") then
+                    if scoring_card:is_suit("fur_stars") then
                         count = count + JokerDisplay.calculate_card_triggers(scoring_card, scoring_hand)
                         
                         if scoring_card.config.center.key == "m_fur_ghostcard" then

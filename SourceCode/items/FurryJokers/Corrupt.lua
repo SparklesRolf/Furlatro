@@ -300,7 +300,7 @@ if Talisman then
             local playingcard = context.other_card
 
             if context.destroy_card and context.cardarea == G.hand and not context.blueprint then
-			    if not (context.destroy_card:is_suit('fur_stars') or context.destroy_card:is_suit('six_Stars')) then
+			    if not context.destroy_card:is_suit('fur_stars') then
 			    	return { remove = true }
 			    end
             end
@@ -383,14 +383,14 @@ if Talisman then
                     if G.GAME.selected_partner ~= "pnr_fur_dannypartner" then
 	    	            if G.deck and card.added_to_deck then
 	    	        	    for i, v in pairs(G.deck.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
 	    	            end
 	    	            if G.hand and card.added_to_deck then
 	    	        	    for i, v in pairs(G.hand.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
@@ -403,14 +403,14 @@ if Talisman then
         add_to_deck = function(self, card, from_debuff)
 	    	if G.deck and card.added_to_deck then
 	    	    for i, v in pairs(G.deck.cards) do
-	    	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	    	if not v:is_suit("fur_stars") then
 	    	    		SMODS.debuff_card(v, true, "fur_danny")
 	    	    	end
 	    	    end
 	    	end
 	    	if G.hand and card.added_to_deck then
 	    	    for i, v in pairs(G.hand.cards) do
-	    	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	    	if not v:is_suit("fur_stars") then
 	    	    		SMODS.debuff_card(v, true, "fur_danny")
 	    	    	end
 	    	    end
@@ -428,14 +428,14 @@ if Talisman then
             if dannycards == 1 then
 	    	    if G.deck and card.added_to_deck then
 	    		    for i, v in pairs(G.deck.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, false, "fur_danny")
 	    		    	end
 	    		    end
 	    	    end
 	    	    if G.hand and card.added_to_deck then
 	    		    for i, v in pairs(G.hand.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, false, "fur_danny")
 	    		    	end
 	    		    end
@@ -508,7 +508,7 @@ else
             local playingcard = context.other_card
 
             if context.destroy_card and context.cardarea == G.hand and not context.blueprint then
-			    if not (context.destroy_card:is_suit('fur_stars') or context.destroy_card:is_suit('six_Stars')) then
+			    if not context.destroy_card:is_suit('fur_stars') then
 			    	return { remove = true }
 			    end
             end
@@ -583,14 +583,14 @@ else
                     if G.GAME.selected_partner ~= "pnr_fur_dannypartner" then
 	    	            if G.deck and card.added_to_deck then
 	    	        	    for i, v in pairs(G.deck.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
 	    	            end
 	    	            if G.hand and card.added_to_deck then
 	    	        	    for i, v in pairs(G.hand.cards) do
-	    	        	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	        	    	if not v:is_suit("fur_stars") then
 	    	        	    		SMODS.debuff_card(v, false, "fur_danny")
 	    	        	    	end
 	    	        	    end
@@ -603,14 +603,14 @@ else
         add_to_deck = function(self, card, from_debuff)
 	    	if G.deck and card.added_to_deck then
 	    	    for i, v in pairs(G.deck.cards) do
-	    	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	    	if not v:is_suit("fur_stars") then
 	    	    		SMODS.debuff_card(v, true, "fur_danny")
 	    	    	end
 	    	    end
 	    	end
 	    	if G.hand and card.added_to_deck then
 	    	    for i, v in pairs(G.hand.cards) do
-	    	    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    	    	if not v:is_suit("fur_stars") then
 	    	    		SMODS.debuff_card(v, true, "fur_danny")
 	    	    	end
 	    	    end
@@ -628,14 +628,14 @@ else
             if dannycards == 1 then
 	    	    if G.deck and card.added_to_deck then
 	    		    for i, v in pairs(G.deck.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, false, "fur_danny")
 	    		    	end
 	    		    end
 	    	    end
 	    	    if G.hand and card.added_to_deck then
 	    		    for i, v in pairs(G.hand.cards) do
-	    		    	if not (v:is_suit("fur_stars") or v:is_suit('six_Stars')) then
+	    		    	if not v:is_suit("fur_stars") then
 	    		    		SMODS.debuff_card(v, false, "fur_danny")
 	    		    	end
 	    		    end

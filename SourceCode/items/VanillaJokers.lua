@@ -18,7 +18,7 @@ SMODS.Joker { -- Envious Joker
     calculate = function(self, card, context)
         if card.debuff then return nil end
         if context.individual and context.cardarea == G.play then
-            if context.other_card:is_suit('fur_stars') or context.other_card:is_suit('six_Stars') then
+            if context.other_card:is_suit('fur_stars') then
 
                 return {
                     mult = card.ability.extra.mult,
